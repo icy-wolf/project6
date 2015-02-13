@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!--Title-->
+    <%= yield_content :title %>
+</head>
+<body>
+<div class="container">
+  <header class="page-header">
+  	<!--Heading-->
+  	<%= yield_content :head %>
+  </header>
+      <div class="row-fluid">
+        <div class="col-md-5 col-md-offset-1">
+        	<!--Image-->
+        	<%= yield_content :img %>
+        </div>
+        <div class="col-md-5">
+        	<!--Content-->
+        	<%= yield_content :content %>
+        </div>
+      </div>
+
+    <h2>They are...</h2>
+    <!--Ending-->
+    <%= yield_content :header %>
+    </div>
+  </body>
+</html>
